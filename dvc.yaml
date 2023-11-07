@@ -1,0 +1,9 @@
+stages:
+  fill_na:
+    cmd: python fill_na.py
+    deps:
+    - .\data\raw\test.csv
+    - .\data\raw\train.csv
+    - .\fill_na.py
+    outs:
+    - .\data\stage1\
